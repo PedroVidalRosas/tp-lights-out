@@ -1,6 +1,10 @@
 # tp-lights-out
+
 Trabajo practico integrador final del curso de técnica  de programación del centro de formación profesional nro 34 2do cuatrimestre 2017
-##reglas del juego:
+
+
+## reglas del juego:
+
 Se trata de un juego individual y se desarrolla en un tablero de 5  5. El
 objetivo es lograr apagar todas las luces encendidas en el tablero. Cuando
 todas las luces han sido apagadas el jugador ha ganado.
