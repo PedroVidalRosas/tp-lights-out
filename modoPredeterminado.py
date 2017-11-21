@@ -1,6 +1,7 @@
 import niveles
 import seleccionarFilaColumna
 import posicionDeColumnaYFilaEnElMapa
+import modificarMapaSegunPosicionDeColumnaFila
 
 
 
@@ -16,12 +17,21 @@ def juegopredeterminado():
 
         mapa = niveles.niveles(nivel)
         mostrarmapa(mapa)
+
+        #Se elije una letra para columna,dentro de los valores correctos
+        #se elije un numero para fila, dentro de los valores correctos
         posicionColumna,posicionFila = seleccionarFilaColumna.elejirColumnaFila()
+
+        #si la posicionColumna o posicionFila es "R" se reinicia
         if posicionFila == "R" or posicionColumna == "R":
             continue
+
+        #Se devuelve la posicion que se encuentra en el mapa de posicionColumna y posicionFila
         posicionColumna,posicionFila = posicionDeColumnaYFilaEnElMapa.devolverPosicionDeColumnaYFilaDelMapa(mapa,posicionColumna,posicionFila)
 
-        print(posicionColumna,posicionFila)
-        nivel += 1
+
+        mapa = modificarMapaSegunPosicionDeColumnaFila.prenderOApagarLuz(mapa,posicionColumna,posicionFila)
+
+        mostrarmapa(mapa)
 
 juegopredeterminado()

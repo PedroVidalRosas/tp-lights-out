@@ -44,3 +44,4 @@ def elejirColumnaFila():
         if posicionFila == "R":
             break
     return posicionColumna,posicionFila
+
