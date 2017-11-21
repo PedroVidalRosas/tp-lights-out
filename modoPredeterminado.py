@@ -17,6 +17,8 @@ def juegopredeterminado():
         mapa = niveles.niveles(nivel)
         mostrarmapa(mapa)
         posicionColumna,posicionFila = seleccionarFilaColumna.elejirColumnaFila()
+        if posicionFila == "R" or posicionColumna == "R":
+            continue
         posicionColumna,posicionFila = posicionDeColumnaYFilaEnElMapa.devolverPosicionDeColumnaYFilaDelMapa(mapa,posicionColumna,posicionFila)
 
         print(posicionColumna,posicionFila)

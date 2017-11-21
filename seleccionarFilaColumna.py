@@ -23,6 +23,7 @@ def elejirFila(fila):
     return False
 
 def elejirColumnaFila():
+    posicionColumna,posicionFila= 1,1
     columna = False
     while columna != True:
         posicionColumna = input("ingrese una letra de la A hasta la E para columna o R para Reiniciar: ").upper()
@@ -31,7 +32,7 @@ def elejirColumnaFila():
             print("ingrese una opcion invalida")
             continue
         if posicionColumna == "R":
-            continue
+            break
 
         fila = False
         while fila != True:
@@ -41,5 +42,5 @@ def elejirColumnaFila():
                 print("Ingreso una Opcion Invalida")
 
         if posicionFila == "R":
-            continue
+            break
     return posicionColumna,posicionFila
