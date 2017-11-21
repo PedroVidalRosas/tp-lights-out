@@ -1,4 +1,5 @@
 import eleccionDelMenuPrincipal
+import modoPredeterminado
 
 def menuPrincipal():
     print("Bienvenido al juedo de Pedro")
@@ -8,6 +9,13 @@ def menuPrincipal():
     print("2 para jugar en mmodo ALEATORIO")
     print("3 para salir")
     eleccion = eleccionDelMenuPrincipal.eleccionDelMenuPrincipal(input())
+    if eleccion== 1:
+        modoPredeterminado.juegopredeterminado()
+    if eleccion == 2:
+       print("esre modo esta en construccion")
+
     if eleccion == 3:
         print("Saliste del Juego de Pedro")
+
+
 menuPrincipal()
