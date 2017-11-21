@@ -27,14 +27,15 @@ def juegopredeterminado():
 
             #si la posicionColumna o posicionFila es "R" se reinicia
             if posicionFila == "R" or posicionColumna == "R":
-                continue
+                break
 
             #Se devuelve la posicion que se encuentra en el mapa de posicionColumna y posicionFila
             posicionColumna,posicionFila = posicionDeColumnaYFilaEnElMapa.devolverPosicionDeColumnaYFilaDelMapa(mapa,posicionColumna,posicionFila)
 
 
             mapa = modificarMapaSegunPosicionDeColumnaFila.prenderOApagarLuz(mapa,posicionColumna,posicionFila)
-
+            print(movimientos)
             mostrarmapa(mapa)
+            movimientos -= 1
 
 juegopredeterminado()
