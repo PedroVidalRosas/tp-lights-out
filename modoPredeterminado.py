@@ -32,7 +32,7 @@ def juegopredeterminado():
             #Se devuelve la posicion que se encuentra en el mapa de posicionColumna y posicionFila
             posicionColumna,posicionFila = posicionDeColumnaYFilaEnElMapa.devolverPosicionDeColumnaYFilaDelMapa(mapa,posicionColumna,posicionFila)
 
-
+            #Se apagan las luces segun la posicion de fila y columna
             mapa = modificarMapaSegunPosicionDeColumnaFila.prenderOApagarLuz(mapa,posicionColumna,posicionFila)
             print(movimientos)
             mostrarmapa(mapa)
