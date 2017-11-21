@@ -43,7 +43,7 @@ def niveles(nivel):
                 '5 |0 0 . . .']
         return mapa
     if nivel == 5:
-        mapa = ['   A B C D E',
+        mapa = ['  A B C D E',
                '1 |. . . 0 0',
                '2 |. . . 0 0',
                '3 |. . . . .',
