@@ -11,5 +11,4 @@ class posicionDeColumnaYFilaEnElMapaTest(unittest.TestCase):
 
         resultadoColumna,resultadoFila = posicionDeColumnaYFilaEnElMapa.devolverPosicionDeColumnaYFilaDelMapa(mapa,columna,fila)
 
-        self.assertEqual(resultadoColumna,1)
-        self.assertEqual(resultadoFila,1)
+        self.assertEqual(resultadoColumna,resultadoFila,1)
